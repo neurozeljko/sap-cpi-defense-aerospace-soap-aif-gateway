@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://defense.mil/classified/v1" elementFormDefault="qualified">
+  <xs:element name="ClassifiedProcurementContract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ContractId" type="xs:string"/>
+        <xs:element name="NATOStockNumber" type="xs:string"/>
+        <xs:element name="SecurityClassification" type="xs:string"/>
+        <xs:element name="WeaponSystemCategory" type="xs:string"/>
+        <xs:element name="ProcurementValueEUR" type="xs:decimal"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

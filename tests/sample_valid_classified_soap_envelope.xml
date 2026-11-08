@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+                  xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+  <soapenv:Header>
+    <wsse:Security>
+      <wsu:Timestamp wsu:Id="Timestamp-01">
+        <wsu:Created>2026-11-08T22:15:30.000Z</wsu:Created>
+        <wsu:Expires>2026-11-08T22:20:30.000Z</wsu:Expires>
+      </wsu:Timestamp>
+      <wsse:UsernameToken>
+        <wsse:Username>DEFENSE_CONTRACTOR_LOCKHEED</wsse:Username>
+        <wsse:Nonce>8f92a104bcde4891b72a441299dfa801</wsse:Nonce>
+      </wsse:UsernameToken>
+    </wsse:Security>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ClassifiedProcurementContract xmlns="http://defense.mil/classified/v1">
+      <ContractId>CTR-MIL-2026-AF91</ContractId>
+      <NATOStockNumber>NSN-1005-01-587-8941</NATOStockNumber>
+      <SecurityClassification>NATO_SECRET</SecurityClassification>
+      <WeaponSystemCategory>AVIONICS_RADAR_ARRAY</WeaponSystemCategory>
+      <ProcurementValueEUR>45000000.00</ProcurementValueEUR>
+    </ClassifiedProcurementContract>
+  </soapenv:Body>
+</soapenv:Envelope>
